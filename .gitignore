@@ -1,0 +1,17 @@
+# mkdocs build files
+/site
+*.html
+*.css
+*.js
+
+# OS dependent files
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+*~
+# Thumbnails
+._*
+# Other
+*.md.html
