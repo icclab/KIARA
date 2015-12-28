@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+	<title>KIARA</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">KIARA</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="active">
+                    <a href=".">Home</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/fiware-middleware/KIARA">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#kiara-fiware-advanced-middleware">KIARA - FIWARE Advanced  Middleware</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#roadmap">Roadmap</a></li>
+        
+            <li><a href="#getting-started">Getting started</a></li>
+        
+            <li><a href="#documentation">Documentation</a></li>
+        
+            <li><a href="#download">Download</a></li>
+        
+            <li><a href="#community-support">Community &amp; Support</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="kiara-fiware-advanced-middleware">KIARA - FIWARE Advanced  Middleware</h1>
+<h2 id="overview">Overview</h2>
+<p>KIARA Fiware Advanced Middleware is a Java based communication middleware for modern, efficient and secure applications. It is an implementation of the FIWARE Advanced Middleware Generic Enabler (GE). </p>
+<p>The Advanced Middleware GE is a set of compile-time and run-time tools, and a communication library to be integrated with the application. Thus, the requirements are rather minimal. In particular it requires no service running in the background.</p>
+<p>KIARA implements transparent, fast, secure and standard conform communication between applications or services running under different machines and using different Operating Systems. It also provides the users with a friendly and extensible API.</p>
+<p>The <a href="http://www.fiware.org">FIWARE platform</a> provides a rather simple yet powerful set of APIs (Application Programming Interfaces) that ease the development of Smart Applications in multiple vertical sectors.</p>
+<p>The <a href="http://catalog.fiware.org">FIWARE Catalogue</a> contains a rich library of components (Generic Enablers) with reference implementations that allow developers to put into effect functionalities such as the connection to the Internet of Things or Big Data analysis, making programming much easier.</p>
+<h2 id="features">Features</h2>
+<p>This first release focuses on the basic features of RPC communication:</p>
+<ul>
+<li>Easy to use and extensible Application Programmer Interface (API).
+Synchronous and Asynchronous function calls.</li>
+<li>Modern Interface Definition Language (IDL) → based on Corba IDL.<ul>
+<li>OMG compliant</li>
+<li>Extended primitive types.</li>
+</ul>
+</li>
+<li>IDL derived operation mode for the RPC Client/Server communication pattern<ul>
+<li>By generating Stubs and Skeletons at compile time → RPC API</li>
+<li>By using proxies to provide and call the functions at runtime → RPC Dynamic Types API</li>
+</ul>
+</li>
+<li>IDL derived operation mode for the Publish/Subscribe communication pattern</li>
+<li>TLS encryption for secure communication</li>
+</ul>
+<h2 id="roadmap">Roadmap</h2>
+<p>Upcoming versions will include additional features:</p>
+<ul>
+<li>Advanced security features like field encryption and authentication</li>
+<li>Application derived and mapped operation mode providing dynamic declaration of functions and data type mapping in source code. </li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="hello-world-video">Hello World Video</h3>
+<p>The following video shows a basic Hello World implementation using KIARA. For more details see the <a href="#a-quick-example">example</a> below or check the <a href="#documentation">documentation</a> section.</p>
+<iframe width="720" height="405" src="https://www.youtube.com/embed/EJjMSOjwu2s" frameborder="0" allowfullscreen></iframe>
+
+<h3 id="a-quick-example">A quick example</h3>
+<p>In the IDL derived approach, first the IDL (Interface Definition Language) definition of the remote functions has to be created:</p>
+<pre><code>service Calculator {
+     float32 add (float32 n1, float32 n2);
+     float32 subtract (float32 n1, float32 n2);
+};
+</code></pre>
+
+<p>The developer has to implement the server side functions of the class <code>CalculatorServantImpl</code>:</p>
+<pre><code class="java">public static class CalculatorServantImpl extends CalculatorServant
+{
+     @Override
+     public float add (/*in*/ float n1, /*in*/ float n2) {
+          return (float) n1   n2;
+     }
+
+     @Override
+     public float subtract (/*in*/ float n1, /*in*/ float n2) {
+         return (float) n1 - n2;
+     }
+     ...
+}
+</code></pre>
+
+<p>Now the server can be started:</p>
+<pre><code class="java">// Create context, server and service
+Context context = Kiara.createContext();
+Server server = context.createServer();
+Service service = context.createService();
+
+// Create and register an instance of the CalculatorServant implementation.
+CalculatorServant Calculator_impl = new CalculatorServantImpl();
+service.register(Calculator_impl);
+
+// register the service on port 9090 using CDR serialization 
+server.addService(service, &quot;tcp://0.0.0.0:9090&quot;, &quot;cdr&quot;);
+
+// run the server
+server.run();
+</code></pre>
+
+<p>The client can connect and call the remote functions via the generated proxy class:</p>
+<pre><code class="java">// Create context
+Context context = Kiara.createContext();
+
+// setup the connection to the server
+Connection connection = context.connect(&quot;tcp://192.168.1.18:9090?serialization=cdr&quot;);
+
+// get the client Proxy implementation
+CalculatorClient client = connection.getServiceProxy(CalculatorClient.class);
+
+// Call the remote methods
+float result = client.add(3, 5);
+</code></pre>
+
+<h2 id="documentation">Documentation</h2>
+<p>Find the full documentation on <a href="http://fiware-middleware-kiara.readthedocs.org/">Read The Docs</a>:</p>
+<ul>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/manuals/Installation_and_Admin_Guide.html">Installation and Administration Guide</a></li>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/manuals/User_and_Programmer_Guide.html">User and Programmer Guide</a></li>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/specification/OpenSpecification.html">Open Specification</a></li>
+<li>API Specifications:<ul>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/specification/Middleware_RPC_API_Specification.html">RPC API Specification</a></li>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/specification/Middleware_RPC_Dynamic_Types_API_Specification.html">RPC Dynamic Types API Specification</a> </li>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/specification/Middleware_PUBSUB_API_Specification.html">Publish/Subscribe API Specification</a></li>
+<li><a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/specification/Middleware_IDL_Specification.html">IDL Specification</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="download">Download</h2>
+<p>KIARA is implemented as a Java Library and published on <a href="http://search.maven.org/#search|ga|1|g:org.fiware.kiara">Maven-Central</a>. It can be used with every modern build management tool like <a href="https://maven.apache.org">Maven</a> or <a href="https://gradle.org">Gradle</a>.
+For basic usage please check our <a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/manuals/Installation_and_Admin_Guide.html">Installation Manual</a> and <a href="http://fiware-middleware-kiara.readthedocs.org/en/latest/manuals/User_and_Programmer_Guide.html">User Guide</a>.</p>
+<p>To download the source code check out the <a href="https://github.com/FIWARE-Middleware/KIARA">KIARA Github repository</a> or download the archive:</p>
+<p><button href="https://github.com/FIWARE-Middleware/KIARA/zipball/master" class="download">
+    <small>Download</small>.zip file
+</button>
+<button href="https://github.com/FIWARE-Middleware/KIARA/tarball/master" class="download">
+    <small>Download</small>.tar.gz file
+</button></p>
+<h2 id="community-support">Community &amp; Support</h2>
+<p>To report bugs or request features, submit issues <a href="https://github.com/fiware-middleware/KIARA/issues">here on GitHub</a>. For additional resources, you can contact the maintainers directly. For general questions and discussions please use the KIARA-discuss mailing list. Once you <a href="https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-KIARA">subscribe</a> to the list, you can send mail to the list address: <a href="mailto:icclab-KIARA@dornbirn.zhaw.ch">icclab-KIARA@dornbirn.zhaw.ch</a>. The mailing list archives are also <a href="https://mailman.engineering.zhaw.ch/pipermail/icclab-KIARA/">available on the web</a>.</p>
+<p>And of course you can follow us on the <a href="https://blog.zhaw.ch/icclab">ICCLab blog</a> for news and updates.</p>
+<h3 id="license">License</h3>
+<p>KIARA is licensed under the <a href="http://www.gnu.org/licenses/lgpl.html">Lesser GNU Public License (LGPL)</a>.</p>
+<h3 id="provided-by">Provided by</h3>
+<p><a href="https://blog.zhaw.ch/icclab"><img alt="ICCLab Logo" src="./img/icclab_logo_300x100.png" title="ICCLab" /></a></p>
+<h3 id="in-colaboration-with">in colaboration with</h3>
+<p><a href="http://fiware.org"><img alt="FIWARE Logo" src="./img/FIWARE_logo_60.png" title="FIWARE" /></a>
+<a href="http://www.eprosima.com"><img alt="eProsima Logo" src="./img/eProsimaLogo_60.png" title="eProsima" /></a>
+<a href="http://www.dfki.de"><img alt="DFKI Logo" src="./img/DFKI_Logo_60.png" title="DFKI" /></a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>©2015 <a href="https://github.com/icclab">ICCLab</a> @ <a href="http://www.zhaw.ch">ZHAW</a> - Zürcher Hochschule für angewandte Wissenschaften</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>
