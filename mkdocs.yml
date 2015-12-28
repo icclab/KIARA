@@ -1,0 +1,6 @@
+site_name: KIARA
+pages:
+- Home: index.md
+theme: simplex
+copyright: ©2015 <a href="https://github.com/icclab">ICCLab</a> @ <a href="http://www.zhaw.ch">ZHAW</a> - Zürcher Hochschule für angewandte Wissenschaften
+repo_url: https://github.com/fiware-middleware/KIARA
