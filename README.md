@@ -12,11 +12,11 @@ KIARA Fiware Advanced Middleware is a Java based communication middleware for mo
 
 The Advanced Middleware GE is a set of compile-time and run-time tools, and a communication library to be integrated with the application. Thus, the requirements are rather minimal. In particular it requires no service running in the background.
 
-KIARA implements transparent, fast, secure and standard conform communication between applications or services running under different machines and using different Operating Systems. It also provides the users with a friendly and extensible API.
+KIARA implements transparent, fast, secure and standard conform communication between applications or services running on multiple machines using different Operating Systems. It also provides a friendly and extensible API.
 
-The [FIWARE platform](http://www.fiware.org) provides a rather simple yet powerful set of APIs (Application Programming Interfaces) that ease the development of Smart Applications in multiple vertical sectors.
+The [FIWARE platform](http://www.fiware.org) offers a powerful set of components (Generic Enablers) providing APIs (Application Programming Interfaces) that ease the development of Smart Applications in multiple vertical sectors.
 
-The [FIWARE Catalogue](http://catalog.fiware.org) contains a rich library of components (Generic Enablers) with reference implementations that allow developers to put into effect functionalities such as the connection to the Internet of Things or Big Data analysis, making programming much easier.
+The [FIWARE catalogue](http://catalog.fiware.org) contains a rich library of reference implementations of the components (Generic Enablers) that allow developers to implement functionalities such as the connection to the Internet of Things or Big Data analysis, making programming much easier.
 
 ## Features
 
@@ -84,3 +84,6 @@ KIARA is licensed under the [Lesser GNU Public License (LGPL)](http://www.gnu.or
 [![FIWARE Logo](./docs/img/FIWARE_logo_60.png "FIWARE")](http://fiware.org)
 [![eProsima Logo](./docs/img/eProsimaLogo_60.png "eProsima")](http://www.eprosima.com)
 [![DFKI Logo](./docs/img/DFKI_Logo_60.png "DFKI")](http://www.dfki.de)
+
+### Supported by
+[![EU FP7 Logo](./docs/img/EU_FP7_logo.png)](http://cordis.europa.eu/fp7/home_en.html)
