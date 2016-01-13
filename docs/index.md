@@ -60,7 +60,7 @@ public static class CalculatorServantImpl extends CalculatorServant
 {
      @Override
      public float add (/*in*/ float n1, /*in*/ float n2) {
-          return (float) n1   n2;
+          return (float) n1 + n2;
      }
  
      @Override
