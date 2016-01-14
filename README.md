@@ -1,6 +1,6 @@
 # KIARA - FIWARE Advanced  Middleware
 
-This is the ICCLab KIARA Webrepository for the full version of this page please go to the [KIARA Github webpage](http://icclab.github.io/kiara).
+This is the ICCLab KIARA Webrepository for the full version of this page please go to the [KIARA Github webpage](http://icclab.github.io/KIARA).
 
 KIARA Github repository: [https://github.com/FIWARE-Middleware/KIARA](https://github.com/FIWARE-Middleware/KIARA)
 
@@ -60,13 +60,8 @@ For basic usage please check our [Installation Manual](http://fiware-middleware-
 
 To download the source code check out the [KIARA Github repository](https://github.com/FIWARE-Middleware/KIARA) or download the archive:
 
-<button href="https://github.com/FIWARE-Middleware/KIARA/zipball/master" class="download">
-    <small>Download</small>.zip file
-</button>
-<button href="https://github.com/FIWARE-Middleware/KIARA/tarball/master" class="download">
-    <small>Download</small>.tar.gz file
-</button>
-
+- [Download .zip file](https://github.com/FIWARE-Middleware/KIARA/zipball/master)
+- [Download .tar.gz file](https://github.com/FIWARE-Middleware/KIARA/tarball/master)
 
 ## Community & Support
 To report bugs or request features, submit issues [here on GitHub](https://github.com/fiware-middleware/KIARA/issues). For additional resources, you can contact the maintainers directly. For general questions and discussions please use the KIARA-discuss mailing list. Once you [subscribe](https://mailman.engineering.zhaw.ch/mailman/listinfo/icclab-KIARA) to the list, you can send mail to the list address: [icclab-KIARA@dornbirn.zhaw.ch](mailto:icclab-KIARA@dornbirn.zhaw.ch). The mailing list archives are also [available on the web](https://mailman.engineering.zhaw.ch/pipermail/icclab-KIARA/).
