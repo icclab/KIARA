@@ -20,7 +20,7 @@ The [FIWARE catalogue](http://catalog.fiware.org) contains a rich library of ref
 
 ## Features
 
-This first release focuses on the basic features of RPC communication:
+This first release focuses on the basic features of RPC and Publish/Subscribe communication:
 
 - Easy to use and extensible Application Programmer Interface (API).
 Synchronous and Asynchronous function calls.
